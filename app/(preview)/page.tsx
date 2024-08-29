@@ -114,9 +114,11 @@ export default function Home() {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
+  
   useEffect(() => {
     scrollToBottom();
   }, [messages]);
+
 
   return (
     <div
@@ -283,6 +285,7 @@ export default function Home() {
             onPaste={handlePaste}
           />
         </form>
+
       </div>
     </div>
   );
